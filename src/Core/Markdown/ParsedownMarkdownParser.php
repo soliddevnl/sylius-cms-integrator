@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace SolidDev\SyliusCmsIntegrator\Core\Markdown;
 
-final class ParseDownMarkdownParserInterface implements MarkdownParserInterface
+final class ParsedownMarkdownParser implements MarkdownParserInterface
 {
     private \Parsedown $parsedown;
 

@@ -13,18 +13,18 @@ namespace SolidDev\SyliusCmsIntegrator\Tests\Core\Markdown;
 use Parsedown;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use SolidDev\SyliusCmsIntegrator\Core\Markdown\ParseDownMarkdownParserInterface;
+use SolidDev\SyliusCmsIntegrator\Core\Markdown\ParsedownMarkdownParser;
 
-class ParseDownMarkdownParserTest extends TestCase
+class ParsedownMarkdownParserTest extends TestCase
 {
-    private ParseDownMarkdownParserInterface $markdownParser;
+    private ParsedownMarkdownParser $markdownParser;
 
     private Parsedown|MockObject $parseDown;
 
     protected function setUp(): void
     {
         $this->parseDown = $this->createMock(Parsedown::class);
-        $this->markdownParser = new ParseDownMarkdownParserInterface($this->parseDown);
+        $this->markdownParser = new ParsedownMarkdownParser($this->parseDown);
     }
 
     public function testParse(): void
