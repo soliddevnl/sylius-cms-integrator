@@ -1,0 +1,36 @@
+{
+    "name": "soliddev/sylius-cms-integrator",
+    "description": "Core package for the Sylius headless CMS integrations",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SolidDev\\SyliusCmsIntegrator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SolidDev\\SyliusCmsIntegrator\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joost van Driel",
+            "email": "joost@soliddev.nl"
+        }
+    ],
+    "require": {
+        "symfony/messenger": "^5.4 |  6.*",
+        "sylius/sylius": "^1.11",
+        "erusev/parsedown": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "sylius-labs/coding-standard": "^4.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/thanks": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
